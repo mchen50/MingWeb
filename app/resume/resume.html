@@ -1,0 +1,48 @@
+<div class="resume-page">
+    <div class="resume-page-header main-page-header">
+        <div class="container">
+            <h1>Ming's Resume</h1>
+
+            <div class="row no-margin">
+                <div class="col-md-7 col-sm-9 col-xs-12">
+                    <p>This is a complete version of Ming's resume. It is spilt into 5 sub pages. Feel free to view and
+                        download the professional resume.</p>
+                </div>
+                <div class="col-md-5 col-sm-3 col-xs-12 btns-resume-header">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-6">
+                            <a href="document/Ming_Chen_Resume_softwareEng.pdf" target="_blank">
+                                <button type="button" class="btn btn-warning btn-view">
+                                    <span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp View Resume
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="col-md-7 col-sm-12 col-xs-6">
+                            <a href="document/Ming_Chen_Resume_softwareEng.pdf" download>
+                                <button type="button" class="btn btn-info btn-download">
+                                    <span class="glyphicon glyphicon-save" aria-hidden="true"></span>&nbsp Download
+                                    Resume
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-pages-nav">
+                <ol class="breadcrumb">
+                    <li ui-sref-active="active"><a ui-sref="resume.experience">Experience</a></li>
+                    <li ui-sref-active="active"><a ui-sref="resume.projects">Projects</a></li>
+                    <li ui-sref-active="active"><a ui-sref="resume.skills">Skills</a></li>
+                    <li ui-sref-active="active"><a ui-sref="resume.activities">Activities</a></li>
+                    <li ui-sref-active="active"><a ui-sref="resume.education">Education</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-content main-page-content">
+        <div ui-view></div>
+    </div>
+</div>
