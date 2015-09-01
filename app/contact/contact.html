@@ -14,101 +14,109 @@
 
         </div>
 
+
         <div class="row contact-content-row">
             <div class="col-md-5 col-md-push-7 col-sm-5 col-sm-push-7 contact-info-box">
-                <h2>Email:</h2>
+                <div class="well well-lg">
+                    <h2>Email:</h2>
 
-                <p>ming.chen.adam@gmail.com</p>
+                    <p>ming.chen.adam@gmail.com</p>
 
-                <h2>Phone:</h2>
+                    <h2>Phone:</h2>
 
-                <p>1-312-806-8168</p>
+                    <p>1-312-806-8168</p>
 
-                <h2>Social Media:</h2>
-                <ul class="socialMediaIcon-contact">
-                    <li>
-                        <a href="https://www.linkedin.com/in/mingchen1" target="_blank">
-                            <img src="image/contact/linkedin-icon.png" style="max-width: 50px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/ming.chen.14473" target="_blank">
-                            <img src="image/contact/facebook-icon.png" style="max-width: 50px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com/adammingchen" target="_blank">
-                            <img src="image/contact/instagram-icon.png" style="max-width: 50px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/saicmsaicm" target="_blank">
-                            <img src="image/contact/twitter-icon.png" style="max-width: 50px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/mchen50" target="_blank">
-                            <img src="image/contact/github-icon.png" style="max-width: 50px;">
-                        </a>
-                    </li>
-                </ul>
+                    <h2>Social Media:</h2>
+                    <ul class="socialMediaIcon-contact">
+                        <li>
+                            <a href="https://www.linkedin.com/in/mingchen1" target="_blank">
+                                <img src="image/contact/linkedin-icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ming.chen.14473" target="_blank">
+                                <img src="image/contact/facebook-icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/adammingchen" target="_blank">
+                                <img src="image/contact/instagram-icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/saicmsaicm" target="_blank">
+                                <img src="image/contact/twitter-icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mchen50" target="_blank">
+                                <img src="image/contact/github-icon.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
             <div class="col-md-7 col-md-pull-5 col-sm-7 col-sm-pull-5">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h2 class="panel-title">Contact Form</h2>
-                    </div>
-                    <div class="panel-body">
-                        <form name="contactform" class="form-horizontal" role="form">
-                            <div class="form-group"
-                                 ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-                                <label for="inputName" class="col-lg-2 control-label">Name</label>
 
-                                <div class="col-lg-10">
+                <div class="panel panel-ming">
+
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Send Email to Ming!</h2>
+                    </div>
+
+                    <div class="panel-body">
+                        <form name="emailForm" class="form-horizontal" role="form">
+                            <div class="form-group"
+                                 ng-class="{ 'has-error': emailForm.inputName.$invalid && submitted }">
+                                <label for="inputName" class="col-md-2 control-label">Name</label>
+
+                                <div class="col-md-10">
                                     <input ng-model="formData.inputName" type="text" class="form-control" id="inputName"
                                            name="inputName" placeholder="Your Name" required>
                                 </div>
                             </div>
                             <div class="form-group"
-                                 ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-                                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                 ng-class="{ 'has-error': emailForm.inputEmail.$invalid && submitted }">
+                                <label for="inputEmail" class="col-md-2  control-label">Email</label>
 
-                                <div class="col-lg-10">
+                                <div class="col-md-10">
                                     <input ng-model="formData.inputEmail" type="email" class="form-control"
                                            id="inputEmail" name="inputEmail" placeholder="Your Email" required>
                                 </div>
                             </div>
                             <div class="form-group"
-                                 ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
-                                <label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+                                 ng-class="{ 'has-error': emailForm.inputSubject.$invalid && submitted }">
+                                <label for="inputSubject" class="col-md-2 control-label">Subject</label>
 
-                                <div class="col-lg-10">
+                                <div class="col-md-10">
                                     <input ng-model="formData.inputSubject" type="text" class="form-control"
                                            id="inputSubject" name="inputSubject" placeholder="Subject Message" required>
                                 </div>
                             </div>
                             <div class="form-group"
-                                 ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-                                <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+                                 ng-class="{ 'has-error': emailForm.inputMessage.$invalid && submitted }">
+                                <label for="inputMessage" class="col-md-2  control-label">Message</label>
 
-                                <div class="col-lg-10">
-                                    <textarea ng-model="formData.inputMessage" class="form-control" rows="4"
+                                <div class="col-md-10">
+                                    <textarea ng-model="formData.inputMessage" class="form-control" rows="5"
                                               id="inputMessage" name="inputMessage" placeholder="Your message..."
                                               required></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-lg-offset-2 col-lg-10">
-                                    <button ng-click="submit(contactform)" class="btn btn-default"
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button ng-click="submit(emailForm)" class="btn btn-success"
                                             ng-disabled="submitButtonDisabled">
-                                        Send Message
+                                        Send Email
                                     </button>
                                 </div>
                             </div>
                         </form>
-                        <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
+                        <div class="alert" ng-class="result">
+                            <ps style="font-size: 16px">{{ resultMessage }}</ps>
+                        </div>
                     </div>
                 </div>
             </div>
