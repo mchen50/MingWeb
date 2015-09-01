@@ -739,4 +739,43 @@
 .contact-page {
     background: url("../image/contact/header.png") no-repeat center top #000;
     background-size: cover;
+
+}
+
+.contact-page .container {
+    height: 96vh;
+}
+
+.contact-page .contact-content-row .contact-info-box .socialMediaIcon-contact {
+    padding-left: 0;
+}
+
+.contact-page .contact-content-row .contact-info-box .socialMediaIcon-contact > li {
+    display: inline-block;
+
+}
+
+.contact-page .contact-content-row .contact-info-box .socialMediaIcon-contact > li > a {
+    display: block;
+    line-height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.vertical-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.panel.panel-default {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.message {
+    padding: 15px;
+    margin: 0;
 }

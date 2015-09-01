@@ -88,7 +88,8 @@
                     //contact page
                     .state('contact', {
                         url: '/contact',
-                        templateUrl: 'app/contact/contact.html'
+                        templateUrl: 'app/contact/contact.html',
+                        controller: 'ContactCtrl'
                     })
             }]
     );
