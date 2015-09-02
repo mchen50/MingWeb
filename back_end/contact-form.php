@@ -21,17 +21,13 @@ if (isset($_POST['inputName']) && isset($_POST['inputEmail']) && isset($_POST['i
     $mail->Subject = $_POST['inputSubject'];
     $mail->Body = "Name: " . $_POST['inputName'] . "\r\n\r\nMessage: " . stripslashes($_POST['inputMessage']);
 
-    if (isset($_POST['ref'])) {
-        $mail->Body .= "\r\n\r\nRef: " . $_POST['ref'];
-    }
-
     if(!$mail->send()) {
-        $data = array('success' => false, 'message' => 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
+        $data = array('success' => false, 'message' => 'Your message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
         echo json_encode($data);
         exit;
     }
 
-    $data = array('success' => true, 'message' => 'Thanks! We have received your message.');
+    $data = array('success' => true, 'message' => 'Thanks for reaching out! Ming will give you response ASAP.');
     echo json_encode($data);
 
 } else {

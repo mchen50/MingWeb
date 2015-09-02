@@ -12,6 +12,35 @@
 
 }
 
+/*Go to top icon*/
+.go-to-top{
+    position:fixed;
+    top: 40%;
+    font-size: 70px;
+    color: #fba800;
+    padding: 8px;
+}
+
+.go-to-top:hover{
+    cursor: pointer;
+    background: url('../image/brand/Light_Orange.png') center center no-repeat;
+    color: #ffffff;
+}
+
+.go-to-top.go-to-top-left{
+    left: 5%;
+}
+
+.go-to-top.go-to-top-right{
+    right: 5%;
+}
+
+@media (max-width: 992px){
+    .go-to-top {
+        display:none;
+    }
+}
+
 /* Header */
 .header .navbar {
     background-color: rgba(60, 60, 60, 0.6);
@@ -48,17 +77,6 @@
     .header .navbar-header h4 {
         display: none;
     }
-}
-
-.header .navbar-header #go-to-top {
-    font-size: 20px;
-    font-weight: 400;
-    color: floralwhite;
-    margin-left: 30px;
-}
-
-.header .navbar-header #go-to-top:hover {
-    cursor: pointer;
 }
 
 .navbar-default .navbar-toggle:hover {
@@ -105,9 +123,9 @@
     }
 
     .header .menu > li > a {
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
     }
 }
 
@@ -361,7 +379,7 @@
 }
 
 .learn-more .contact-section-home {
-    background-color: rgba(255, 77, 0, 0.48);
+    background-color: rgba(115, 114, 163, 0.58);
 }
 
 /* footer */
@@ -400,12 +418,6 @@
     padding: 0px;
 }
 
-@media (max-width: 768px) {
-    .footer .footer-middle {
-        left: 10%;
-    }
-}
-
 .footer .footer-middle a {
     display: block;
 }
@@ -423,6 +435,17 @@
 
 .footer .socialMediaIcon .copyRight {
     padding-right: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .footer .footer-middle {
+        left: 10%;
+    }
+
+    .footer .socialMediaIcon .copyRight {
+        display:none;
+    }
 }
 
 .footer .socialMediaIcon > li {
@@ -673,7 +696,7 @@
 
 /*resume page header*/
 .resume-page .resume-page-header {
-    background: transparent url('../image/resume/light_orange_background.jpg') center center no-repeat;
+    background: transparent url('../image/resume/light_orange_background.png') center center no-repeat;
     background-size: cover;
 }
 
@@ -713,7 +736,7 @@
 
 /* about Ming page*/
 .aboutMing-page-header {
-    background: url("../image/aboutMing/aboutMing-content.jpg") no-repeat center top #000;
+    background: url("../image/aboutMing/ffxiv_background.png") no-repeat center top #000;
     background-size: cover;
 }
 
@@ -731,7 +754,7 @@
 }
 
 .aboutMing-content {
-    background: url("../image/aboutMing/ffxiv_background.png") no-repeat center top #000;
+    background: url("../image/aboutMing/aboutMing-content.jpg") no-repeat center top #000;
     background-size: cover;
 }
 
@@ -759,6 +782,12 @@
 
 .contact-page .contact-content-row .contact-info-box{
     margin: 40px auto;
+}
+
+@media (max-width: 992px) {
+    .contact-page .container {
+        padding-bottom: 130px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -864,9 +893,4 @@
 
 .contact-page .contact-content-row .panel-ming > .panel-body textarea {
     resize:vertical;
-}
-
-.message {
-    padding: 15px;
-    margin: 0;
 }

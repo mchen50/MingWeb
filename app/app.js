@@ -96,12 +96,10 @@
 
     app.controller('AppCtrl', ['$scope', '$location', 'anchorSmoothScroll', function ($scope, $location, anchorSmoothScroll) {
         $scope.showGotoTop = false;
-        $scope.showHeaderText = true;
 
         $scope.gotoTop = function () {
             $location.hash('top');
             anchorSmoothScroll.scrollTo('top');
-
         };
     }])
 }());

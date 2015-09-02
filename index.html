@@ -75,12 +75,10 @@
                         <img src="image/brand/LOGO-header.png">
                     </a>
 
-                    <h4 ng-show="showHeaderText">Everything About
+                    <h4>Everything About
                         <span class="name">Ming Chen</span>
                         Starts Here
                     </h4>
-
-                    <a id="go-to-top" ng-click="gotoTop()" scroll ng-show="showGotoTop">Go to top</a>
 
                     <button type="button"
                             class="navbar-toggle"
@@ -128,6 +126,14 @@
 
             </div>
         </nav>
+    </div>
+
+    <div class="go-to-top-left go-to-top">
+        <i class="fa fa-angle-double-up" ng-click="gotoTop()" scroll ng-show="showGotoTop"></i>
+    </div>
+
+    <div class="go-to-top-right go-to-top">
+       <i class="fa fa-angle-double-up" ng-click="gotoTop()" scroll ng-show="showGotoTop"></i>
     </div>
 
     <div class="main-content">
