@@ -47,7 +47,8 @@
                     })
                     .state('resume.projects', {
                         url: "/projects",
-                        templateUrl: 'app/resume/projects.html'
+                        templateUrl: 'app/resume/projects.html',
+                        controller: 'ProjectsCtrl'
                     })
                     .state('resume.skills', {
                         url: "/skills",
