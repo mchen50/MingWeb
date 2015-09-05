@@ -97,6 +97,7 @@
 
     app.controller('AppCtrl', ['$scope', '$location', 'anchorSmoothScroll', function ($scope, $location, anchorSmoothScroll) {
         $scope.showGotoTop = false;
+        $scope.isDisable = true;
 
         $scope.gotoTop = function () {
             $location.hash('top');
