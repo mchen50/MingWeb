@@ -511,8 +511,6 @@
 }
 
 .main-page-content {
-    background: transparent url('../image/resume/gray-background.jpg') center center no-repeat;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -724,6 +722,11 @@
     margin-bottom: 5px;
 }
 
+.resume-content{
+    background: transparent url('../image/resume/gray-background.jpg') center center no-repeat;
+    background-size: cover;
+}
+
 /*skills page content*/
 .skill-content-box {
     border-radius: 6px;
@@ -749,27 +752,26 @@
 }
 
 /* about Ming page*/
-.aboutMing-page-header {
+.about-ming-page-header {
     background: url("../image/aboutMing/ffxiv_background.png") no-repeat center top #000;
     background-size: cover;
 }
 
-.aboutMing-page-header h1,
-.aboutMing-page-header p {
+.about-ming-page-header h1,
+.about-ming-page-header p {
     color: whitesmoke;
 }
 
-.aboutMing-page .sub-pages-nav .breadcrumb {
+.about-ming-page .sub-pages-nav .breadcrumb {
     background-color: rgba(225, 119, 0, 0.4);
 }
 
-.aboutMing-page .sub-pages-nav .breadcrumb > li > a {
+.about-ming-page .sub-pages-nav .breadcrumb > li > a {
     color: #00cfff;
 }
 
-.aboutMing-content {
-    background: url("../image/aboutMing/aboutMing-content.jpg") no-repeat center top #000;
-    background-size: cover;
+.about-ming-content {
+    background-color: #618FA7;
 }
 
 /*contact Page*/
