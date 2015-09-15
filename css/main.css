@@ -35,7 +35,17 @@
     right: 5%;
 }
 
-@media (max-width: 992px){
+@media (max-width: 1400px){
+    .go-to-top.go-to-top-left{
+        left: 1%;
+    }
+
+    .go-to-top.go-to-top-right{
+        right: 1%;
+    }
+}
+
+@media (max-width: 1280px){
     .go-to-top {
         display:none;
     }
@@ -154,7 +164,7 @@
 .slider {
     position: relative;
     width: 100%;
-    height: 750px;
+    height: auto;
     border-bottom: 1px solid #FF4D00;
     background: transparent url('../image/slides/gray-background.jpg') center center no-repeat;
     background-size: cover;
@@ -241,6 +251,7 @@
 @media (max-width: 992px) {
     .slider .carousel .slide-img-half {
         margin-top: 160px;
+        max-width: 600px;
     }
 
     .slider .carousel .slide-img-thumbnail {
